@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+
+
+
+header{
+    padding: 10vw;
+}
+
+h2{
+    text-align: center;
+}
+
+.row>div{
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    color: antiquewhite;
+    padding-bottom: 10%;
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af); /* Gradient from dark to light */
+    color: #fff; /* Ensure text is readable */
+}
+
+.headerOfheaders h1, header {
+    text-align: center;
+    font-size: 250%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.row {
+    background-color: rgba(0, 0, 0, 0); /* Black with 50% transparency */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.workclass{
+    
+    display: flex;
+    margin: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.workclass>div{
+    
+   border-right: solid black;
+   border-left: solid black;
+   padding-right: 4%;
+   padding-left: 4%;
+}
+
+.extrasBack{
+    padding-left: 10vw;
+    font-size: larger;
+    color: #2c3e50;
+}
+
+.extrasBack:hover{
+    color: #ff0000;
+}
+
+
+
+
+
+
+
+/* BACKGROUND */ 
+
+/* Full-page container */
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-vector/stream-binary-code-background_53876-117998.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Keeps the background behind the content */
+    filter: blur(100%); /* Initial blur */
+    transition: filter 0.3s ease-out; /* Smooth transition for the blur */
+}
+
+/* Content container */
+.content {
+    font-family: "Handjet", sans-serif;
+    text-align: center;
+    font-size: 500%;
+    height: 200vh; /* Makes content long enough to scroll */
+    padding: 50px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0); /* Slight background for readability */
+}
+
+
+/*COOL BUTTONS!!!!*/
+
+/* 16 */
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+}
+
+.btn-16 {
+
+    border: none;
+    color: #ffffff;
+  }
+  .btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+     -7px -7px 20px 0px rgba(255, 0, 0, 0.6),
+     -4px -4px 5px 0px rgba(255, 0, 0, 0.6),
+     7px 7px 20px 0px rgba(255, 0, 0, 0.133),
+     4px 4px 5px 0px rgb(255, 0, 0);
+    transition: all 0.5s ease;
+    
+  }
+  .btn-16:hover {
+    color: #ff0000;
+  }
+  .btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  .btn-16:active {
+    top: 2px;
+  }
+
+  button {
+    margin: 20px;
+  }
+
+  /*.custom-btn {
+    width: 20vw;
+    height: 25px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: "DM Serif Display", serif;
+    font-size: 200%;
+    font-weight: 500;
+    background: rgb(37, 37, 37);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(255, 0, 0, 0.1),
+     4px 4px 5px 0px rgba(255, 255, 255, 0.1);
+    outline: none;
+  } */
+
+  .custom-btn {
+    display: inline-block;
+    padding: 10px 20px; /* Add padding to create space inside the button */
+    color: #fff;
+    border-radius: 5px;
+    font-family: "DM Serif Display", serif;
+    font-size: 200%; /* Increase or decrease the size as needed */
+    font-weight: 500;
+    background: rgb(37, 37, 37);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+                7px 7px 20px 0px rgba(255, 0, 0, 0.1),
+                4px 4px 5px 0px rgba(255, 255, 255, 0.1);
+    outline: none;
+    text-align: center;
+    min-width: 300px; /* Minimum button width */
+    /* max-width: 300px;  Maximum button width */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+}
+
+  .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+
+  a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the link uses the same color as the surrounding text or button */
+}
+
+a:visited {
+    color: inherit; /* Removes the purple color after the link is clicked */
+    text-decoration: none; /* Keeps the underline removed after visit */
+}
